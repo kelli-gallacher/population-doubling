@@ -3,8 +3,8 @@
 ## **&#128218; Table of Contents**
 
 - [About](https://github.com/kelli-gallacher/population-doubling/tree/main?tab=readme-ov-file#-about)
-- [Before you run](https://github.com/kelli-gallacher/population-doubling/tree/main?tab=readme-ov-file#-installation)
--  [Output](https://github.com/kelli-gallacher/population-doubling/tree/main?tab=readme-ov-file#-about)
+- [Before you run](https://github.com/kelli-gallacher/population-doubling/tree/main?tab=readme-ov-file#-before-you-run)
+-  [Output](https://github.com/kelli-gallacher/population-doubling/tree/main?tab=readme-ov-file#-optionst)
 - [Acknowledgements](https://github.com/kelli-gallacher/population-doubling/tree/main?tab=readme-ov-file#acknowledgements)
 - [Options](https://github.com/kelli-gallacher/population-doubling/tree/main?tab=readme-ov-file#addtional-options)
 
