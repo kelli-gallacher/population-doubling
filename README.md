@@ -55,6 +55,7 @@ The script should automatically import these libraries upon running. The code is
 
 **4**.  If you would like to use **your own data**, please ensure that you have only **two** conditions and use the column headers:
  - Cells
+ - Passage
  - Treatment
  - Seeded
  - Retrieved
