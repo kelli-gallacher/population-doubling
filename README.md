@@ -3,8 +3,8 @@
 ## **&#128218; Table of Contents**
 
 - [About](#-about)
-- [Before you run](#-installation)
-- [Output](#-about)
+- [Before you run](#-before-you-run)
+- [Output](#-output)
 - [Acknowledgements](#acknowledgements)
 - [Options](#addtional-options)
 
