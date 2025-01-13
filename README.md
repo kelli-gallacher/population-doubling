@@ -1,17 +1,28 @@
-# Population Doubling Level (PDL) Calculator
+<p align="center"><img src="https://i.ibb.co/2nsppDF/PDL-header.png"></align>
 
 ## **&#128218; Table of Contents**
 
 - [About](https://github.com/kelli-gallacher/population-doubling/tree/main?tab=readme-ov-file#-about)
 - [Installation](https://github.com/kelli-gallacher/population-doubling/tree/main?tab=readme-ov-file#-installation)
 -  [Output](https://github.com/kelli-gallacher/population-doubling/tree/main?tab=readme-ov-file#-about)
+- [Acknowledgements](https://github.com/kelli-gallacher/population-doubling/tree/main?tab=readme-ov-file#-acknowledgements)
 
 
 ## &#128300; About 
 
-This script is designed to calculate the population doubling level (**PDL**) from cell culture experiments with multiple conditions.
+This script is designed to be a speedy tool to calculate the population doubling level (**PDL**) from cell culture experiments with two conditions. In addition to calculation, the script will also generate graphs and perform regression analysis.
 
-The [sample data](https://raw.githubusercontent.com/kelli-gallacher/population-doubling/refs/heads/main/SampleData.csv) is taken from an experiment using a human keratinocyte cell line.
+The [sample data](https://raw.githubusercontent.com/kelli-gallacher/population-doubling/refs/heads/main/SampleData.csv) is taken from an experiment using a human keratinocyte cell line (referred to as 'MEM' in the data). The two conditions the cells were grown in are control ('CON') and with a Rho-kinase inhibitor ('ROCKi'). 
+
+The number of cells retrieved and seeded was recorded every week. These values can be used to calculate the PDL, using the below equation:
+
+> **PDL = PDL<sub>0</sub> + 3.22 * (log<sub>Cf</sub> - log<sub>Ci</sub>)**
+> 
+**PDL** initial population doubling level
+**C<sub>i</sub>** Initial cell number seeded
+**C<sub>f</sub>** Number of cells retrieved
+
+If you are interested, this [article](https://www.roosterbio.com/blog/best-practices-in-msc-culture-tracking-and-reporting-cellular-age-using-population-doubling-level-pdl-and-not-passage-number/) provides a more in-depth overview of PDL.
 
 ## &#128187; Installation
 
@@ -48,3 +59,9 @@ After successful running of the script, you should see the following output:
 
 **A graph with both conditions and a fitted linear regression line**
 ![An x y plot of passage number against cumulative PDL for control and ROCKi treated cells, with a dotted line showing the linear regression for each condition](https://i.ibb.co/rMSYxmf/regression-cumulative-pdl-both-conditions.png)
+
+## &#129309;&#127995;Acknowledgements
+
+ - The PDL calculation used in this script is from [RoosterBio](https://www.roosterbio.com/blog/what-is-population-doubling-level-pdl-why-is-it-important-for-cell-age/).
+ - The sample data was produced by the author (Kelli Gallacher) and she has given permission for its use.
+
