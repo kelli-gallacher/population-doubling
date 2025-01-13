@@ -6,7 +6,7 @@
 - [Before you run](https://github.com/kelli-gallacher/population-doubling/tree/main?tab=readme-ov-file#-installation)
 -  [Output](https://github.com/kelli-gallacher/population-doubling/tree/main?tab=readme-ov-file#-about)
 - [Acknowledgements](https://github.com/kelli-gallacher/population-doubling/tree/main?tab=readme-ov-file#acknowledgements)
-- Options
+- [Options](https://github.com/kelli-gallacher/population-doubling/tree/main?tab=readme-ov-file#addtional-options)
 
 
 ## &#128300; About 
