@@ -2,11 +2,11 @@
 
 ## **&#128218; Table of Contents**
 
-- [About](https://github.com/kelli-gallacher/population-doubling/tree/main?tab=readme-ov-file#-about)
-- [Before you run](https://github.com/kelli-gallacher/population-doubling/tree/main?tab=readme-ov-file#-installation)
--  [Output](https://github.com/kelli-gallacher/population-doubling/tree/main?tab=readme-ov-file#-about)
-- [Acknowledgements](https://github.com/kelli-gallacher/population-doubling/tree/main?tab=readme-ov-file#acknowledgements)
-- [Options](https://github.com/kelli-gallacher/population-doubling/tree/main?tab=readme-ov-file#addtional-options)
+- [About](#-about)
+- [Before you run](#-installation)
+- [Output](#-about)
+- [Acknowledgements](#acknowledgements)
+- [Options](#addtional-options)
 
 
 ## &#128300; About 
@@ -62,7 +62,7 @@ The script should automatically import these libraries upon running. The code is
 ## &#128200; Output
 After successful running of the script, you should see the following output. All images will be saved to your working directory. 
 
-See [Options](https://github.com/kelli-gallacher/population-doubling/tree/main?tab=readme-ov-file#addtional-options) for customisation of appearance and file name(s).
+See [Options](#addtional-options) for customisation of appearance and file name(s).
 
 **1. A graph comparing the cumulative PDL for both conditions**
 
