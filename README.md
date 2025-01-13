@@ -2,9 +2,9 @@
 
 ## **&#128218; Table of Contents**
 
-- [About](https://github.com/kelli-gallacher/population-doubling/edit/main/README.md#-about)
-- [Installation](https://github.com/kelli-gallacher/population-doubling/edit/main/README.md#-installation)
--  [Output](https://github.com/kelli-gallacher/population-doubling/edit/main/README.md#-output)
+- [About](https://github.com/kelli-gallacher/population-doubling/tree/main?tab=readme-ov-file#-about)
+- [Installation](https://github.com/kelli-gallacher/population-doubling/tree/main?tab=readme-ov-file#-installation)
+-  [Output](https://github.com/kelli-gallacher/population-doubling/tree/main?tab=readme-ov-file#-about)
 
 
 ## &#128300; About 
