@@ -119,14 +119,11 @@ ax2.grid(True)
 # Set the layout to 'tight'
 plt.tight_layout()
 
-# Save a png version of the graphs
+# Save a png version of the graphs and print on screen
 plt.savefig('cumulative_pdl_both conditions.png', dpi=300, bbox_inches='tight')
-
-# Print the plot
 plt.show()
 
 # ANALYSIS OF DATA
-
 
 # Calculate the linear regression for each condition
 slopeCON, interceptCON, r_valueCON, p_valueCON, std_errCON = stats.linregress(df_con['Passage'], df_con['Cumulative_PDL'])
@@ -162,6 +159,7 @@ plt.xlabel('Passage')
 plt.ylabel('Cumulative PDL')
 plt.legend(['Control', 'ROCKi', 'Linear regression'])
 plt.title('Control vs ROCKi')
+plt.savefig('regression_cumulative_pdl_both conditions.png', dpi=300, bbox_inches='tight')
 plt.show()
 
 
