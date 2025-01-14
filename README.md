@@ -11,17 +11,21 @@
 
 ## &#128300; About 
 
-This script is designed to be a speedy tool to calculate the population doubling level (**PDL**) from cell culture experiments with **two** conditions. In addition to calculation, the script will also generate graphs and perform regression analysis.
+This script is designed to be a speedy tool to calculate the population doubling level (**PDL**) of cells grown in **two** different conditions,, providing an insight into differences in growth rates.
+
+In addition to calculation, the script will also generate graphs and perform regression analysis. 
 
 The [sample data](https://raw.githubusercontent.com/kelli-gallacher/population-doubling/refs/heads/main/SampleData.csv) is taken from an experiment using a human keratinocyte cell line (referred to as 'MEM' in the data). The two conditions the cells were grown in are control ('CON') and with a Rho-kinase inhibitor ('ROCKi'). 
 
-The number of cells retrieved and seeded was recorded every week. These values can be used to calculate the PDL, using the below equation:
+The number of cells retrieved and seeded was recorded every passage. These values can be used to calculate the PDL, using the below equation:
 
 > **PDL = PDL<sub>0</sub> + 3.22 * (log<sub>Cf</sub> - log<sub>Ci</sub>)**
 > 
-**PDL** initial population doubling level
+**PDL<sub>0</sub>** Population doubling level at seeding*
 **C<sub>i</sub>** Initial cell number seeded
 **C<sub>f</sub>** Number of cells retrieved
+
+**NB: For the first passage, PDL<sub>0</sub> is set as 0.*
 
 If you are interested, this [article](https://www.roosterbio.com/blog/best-practices-in-msc-culture-tracking-and-reporting-cellular-age-using-population-doubling-level-pdl-and-not-passage-number/) provides a more in-depth overview of PDL.
 
@@ -60,6 +64,8 @@ The script should automatically import these libraries upon running. The code is
  - Seeded
  - Retrieved
 
+*NB: in the sample data, cells are recorded at  a concentration of 10<sup>6</sup>/mL) - for example, 0.1 = 100,000 cells.*
+ 
 ## &#128200; Output
 After successful running of the script, you should see the following output. 
 
@@ -79,7 +85,7 @@ See [Options](https://github.com/kelli-gallacher/population-doubling/tree/main?t
 
 ![Separate x y plots of passage number against cumulative PDL for control and ROCKi treated cells](https://i.ibb.co/LPRG5hm/cumulative-pdl-both-conditions.png)
 
-**3. A text readout of the the regression analysis for both conditions**
+**3. A text readout of the the linear regression analysis for both conditions**
 
 ![White text on a black background with a text readout of the regression analysis for both conditions](https://i.ibb.co/BcR718Y/Regression-Read-Our.png)
 
@@ -99,7 +105,8 @@ See [Options](https://github.com/kelli-gallacher/population-doubling/tree/main?t
 
 ## &#129309;&#127995;Acknowledgements
 
- - The PDL calculation used in this script is from [RoosterBio](https://www.roosterbio.com/blog/what-is-population-doubling-level-pdl-why-is-it-important-for-cell-age/).
+ - The PDL calculation used in this script is taken from:
+ Boland *et al.* (2019) Nature vs. Nurture: Defining the Effects of Mesenchymal Stromal Cell Isolation and Culture Conditions on Resiliency to Palmitate Challenge. _Frontiers in immunology,_ 10, 1080. [https://doi.org/10.3389/fimmu.2019.01080](https://doi.org/10.3389/fimmu.2019.01080)
  - The sample data was produced by the author (Kelli Gallacher) and she has given permission for its use.
 
 
