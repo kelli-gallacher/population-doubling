@@ -11,7 +11,7 @@
 
 ## &#128300; About 
 
-This script is designed to be a speedy tool to calculate the population doubling level (**PDL**) of cells grown in **two** different conditions,, providing an insight into differences in growth rates.
+This script is designed to be a speedy tool to calculate the population doubling level (**PDL**) of cells grown in **two** different conditions, providing an insight into differences in growth rates.
 
 In addition to calculation, the script will also generate graphs and perform regression analysis. 
 
