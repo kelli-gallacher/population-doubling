@@ -11,7 +11,9 @@
 
 ## &#128300; About 
 
-This script is designed to be a speedy tool to calculate the population doubling level (**PDL**) of cells grown in **two** different conditions, providing an insight into differences in growth rates.
+This script is designed to be a speedy tool to calculate the population doubling level (**PDL**) of cells grown in **two** different conditions.
+
+The PDL is the total number of times the cells in a population have doubled _in vitro_. This is an indicator of the differences in cell growth rate and cell age between the conditions.
 
 In addition to calculation, the script will also generate graphs and perform regression analysis. 
 
@@ -32,7 +34,7 @@ If you are interested, this [article](https://www.roosterbio.com/blog/best-pract
 
 ## &#128187; Before you run
 
-**1**. Please ensure that you have downloaded [SampleData.csv](https://raw.githubusercontent.com/kelli-gallacher/populationdoubling/refs/heads/main/SampleData.csv%29) and PDLCalc.py, which should be saved in your working directory.
+**1**. Please ensure that you have downloaded [PDLCalc.py](https://raw.githubusercontent.com/kelli-gallacher/population-doubling/refs/heads/main/PDLCalc.py), which should be saved in your working directory.
 
 **2**. In order for this script to work, the following packages are    required:
 
@@ -56,7 +58,7 @@ The script should automatically import these libraries upon running. The code is
 
 
 
-**3**. Run the pipeline with **SampleData.csv** ( the script is written to automatically import this).
+**3**. Run [PDLCalc.py](https://raw.githubusercontent.com/kelli-gallacher/population-doubling/refs/heads/main/PDLCalc.py) with **SampleData.csv** (the script is written to automatically import this from GitHub, as below)
 
     data=pd.read_csv("https://raw.githubusercontent.com/kelli-gallacher/population-doubling/refs/heads/main/SampleData.csv")
 
@@ -109,7 +111,13 @@ See [Options](https://github.com/kelli-gallacher/population-doubling/tree/main?t
 ## &#129309;&#127995;Acknowledgements
 
  - The PDL calculation used in this script is taken from:
+ 
  Boland *et al.* (2019) Nature vs. Nurture: Defining the Effects of Mesenchymal Stromal Cell Isolation and Culture Conditions on Resiliency to Palmitate Challenge. _Frontiers in immunology,_ 10, 1080. [https://doi.org/10.3389/fimmu.2019.01080](https://doi.org/10.3389/fimmu.2019.01080)
+ - PDL is outlined in
+
+
+
+RoosterBio (2021) What is Population Doubling Level (PDL) & Why Is Important for Cell Age? [https://www.roosterbio.com/blog/what-is-population-doubling-level-pdl-why-is-it-important-for-cell-age/](https://www.roosterbio.com/blog/what-is-population-doubling-level-pdl-why-is-it-important-for-cell-age/)
  - The sample data was produced by the author (Kelli Gallacher) and she has given permission for its use.
 
 
