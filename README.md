@@ -21,9 +21,10 @@ The number of cells retrieved and seeded was recorded every passage. These value
 
 > **PDL = PDL<sub>0</sub> + 3.22 * (log<sub>Cf</sub> - log<sub>Ci</sub>)**
 > 
-**PDL<sub>0</sub>** Population doubling level at seeding*
-**C<sub>i</sub>** Initial cell number seeded
-**C<sub>f</sub>** Number of cells retrieved
+
+ - **PDL<sub>0</sub>** Population doubling level at seeding*
+ - **C<sub>i</sub>** Initial cell number seeded
+ - **C<sub>f</sub>** Number of cells retrieved
 
 **NB: For the first passage, PDL<sub>0</sub> is set as 0.*
 
@@ -55,7 +56,9 @@ The script should automatically import these libraries upon running. The code is
 
 
 
-**3**. Run the pipeline with **SampleData.csv.**
+**3**. Run the pipeline with **SampleData.csv** ( the script is written to automatically import this).
+
+    data=pd.read_csv("https://raw.githubusercontent.com/kelli-gallacher/population-doubling/refs/heads/main/SampleData.csv")
 
 **4**.  If you would like to use **your own data**, please ensure that you have only **two** conditions and use the column headers:
  - Cells
