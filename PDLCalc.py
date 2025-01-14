@@ -13,7 +13,9 @@ data=pd.read_csv("https://raw.githubusercontent.com/kelli-gallacher/population-d
 
 data.head()
 
-# Drop the zero values from the data frame
+## DATA CLEANING AND PREPROCESSING
+
+# Drop the zero values from the data frame 
 
 df = pd.DataFrame(data)
 df = df.drop([0,1])
@@ -36,7 +38,7 @@ df_rocki = df[df['Treatment'] == 'ROCKi'].reset_index(drop=True)
 print(df_con)
 print(df_rocki)
 
-## CALCULATING POPULATION DOUBLING LEVEL (PDL)
+## CALCULATING CUMULATIVE POPULATION DOUBLING LEVEL (PDL)
 
 # Define the equation to calculate the cumulative PDL, following the equation stated in the README file
 
@@ -69,9 +71,11 @@ PDLfinal = pd.concat([PDL_con, PDL_rocki]).sort_index()
 
 # Print the data frames
 
-print("Calculated PDL and cumulative PDL for all conditions:")
+print("Calculated cumulative PDL for all conditions:")
 print(PDLfinal)
+print("Calculated cumulative PDL for CON:")
 print(PDL_con)
+print("Calculated cumulative PDL for ROCKi:")
 print(PDL_rocki)
 
 # PLOTTING THE DATA
@@ -93,6 +97,8 @@ plt.savefig('cumulative_pdl_comparison.png', dpi=300, bbox_inches='tight')
 
 # Print the plot
 plt.show()
+
+# Create a separate plot of the cumulative PDL for Con and ROCKi
 
 # Create a side-by-side view for the graphs
 fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(15, 6))
@@ -123,7 +129,7 @@ plt.tight_layout()
 plt.savefig('cumulative_pdl_both conditions.png', dpi=300, bbox_inches='tight')
 plt.show()
 
-# ANALYSIS OF DATA
+# LINEAR REGRESSION ANALYSIS
 
 # Calculate the linear regression for each condition
 slopeCON, interceptCON, r_valueCON, p_valueCON, std_errCON = stats.linregress(df_con['Passage'], df_con['Cumulative_PDL'])
@@ -143,14 +149,13 @@ print("ROCKi:",
       "Standard error:",std_errROCKi)
 print("For each passage, PDL increases by:", slopeCON, "in control cells and", slopeROCKi, "in ROCKi treated cells")
 
-# Plot another comparison graph with the regression line
+# Plot another comparison graph to add a regression line to
 
 plt.figure(figsize=(10,6))
 plt.scatter(df_con['Passage'], df_con['Cumulative_PDL'], color='red', label='Control')
 plt.scatter(df_rocki['Passage'], df_rocki['Cumulative_PDL'], color='blue', label='ROCKi')
 
-# Calculate y = mx + c and plot the line on the graph 
-# x = passage, m = slope, c = intercept
+# Calculate linear regression line (y = mx + c) and plot on the graph (x = passage, m = slope, c = intercept)
 
 plt.plot(df_con['Passage'], slopeCON*df_con['Passage'] + interceptCON, 'k', ls=':', label='Control fit')
 plt.plot(df_rocki['Passage'],slopeROCKi*df_rocki['Passage'] + interceptROCKi, 'k', ls=':', label='ROCKi fit')
@@ -159,6 +164,8 @@ plt.xlabel('Passage')
 plt.ylabel('Cumulative PDL')
 plt.legend(['Control', 'ROCKi', 'Linear regression'])
 plt.title('Control vs ROCKi')
+
+# Save a png version of the graphs and print on screen
 plt.savefig('regression_cumulative_pdl_both conditions.png', dpi=300, bbox_inches='tight')
 plt.show()
 
